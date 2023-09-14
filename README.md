@@ -18,3 +18,13 @@ let loop = setInterval(( function () {
 ), 3000);
 
 ```
+
+This is for normal text ones:
+```
+let question_amount = [insert number of fields here];
+
+for (let j = 0; j < question_amount; j++) {
+    document.getElementById("gameinput").value = getAnswer(j);
+    checkGameInput(document.getElementById("gameinput"));
+}
+```
