@@ -4,7 +4,7 @@ Sporcle is a joke
 Run this snippet in slideshow-type quizzes in Sporcle and watch as your computer takes the quiz for you:
 ```
 let loop_variable = 0;
-let question_amount = [insert amount of questions];
+let question_amount = [insert amount of questions here];
 
 let loop = setInterval(( function () {
     if (loop_variable == question_amount) { clearInterval(loop) }
@@ -13,6 +13,8 @@ let loop = setInterval(( function () {
         checkGameInput(document.getElementById("gameinput"));
     }
     loop_variable++;
+    console.log(`Answered question ${loop_variable}`);
 }
-), 2000);
+), 3000);
+
 ```
